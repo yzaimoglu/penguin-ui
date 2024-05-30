@@ -6,6 +6,7 @@ import (
 	"net/url"
 	"os"
 	"os/exec"
+	"strconv"
 	"strings"
 )
 
@@ -13,7 +14,7 @@ type PenguinConfig struct {
 	Name                string
 	BodyFont            string
 	TitleFont           string
-	Border              string
+	Border              bool
 	BorderRadius        string
 	Primary             string
 	PrimaryDark         string
@@ -67,11 +68,16 @@ func main() {
 		fmt.Println("The url you have entered is incorrect: not enough params")
 		return
 	}
+	border, err := strconv.ParseBool(configSplit[3])
+	if err != nil {
+		fmt.Println("The border you have entered is incorrect: not true or false")
+		return
+	}
 	penguinUiConfig := PenguinConfig{
 		Name:                configSplit[0],
 		BodyFont:            configSplit[1],
 		TitleFont:           configSplit[2],
-		Border:              configSplit[3],
+		Border:              border,
 		BorderRadius:        configSplit[4],
 		Primary:             configSplit[5],
 		PrimaryDark:         configSplit[6],
@@ -115,7 +121,7 @@ func main() {
 	fmt.Fprintf(file, "\tName string = \"%s\"\n", penguinUiConfig.Name)
 	fmt.Fprintf(file, "\tBodyFont string = \"%s\"\n", penguinUiConfig.BodyFont)
 	fmt.Fprintf(file, "\tTitleFont string = \"%s\"\n", penguinUiConfig.TitleFont)
-	fmt.Fprintf(file, "\tBorder string = \"%s\"\n", penguinUiConfig.Border)
+	fmt.Fprintf(file, "\tBorder bool = %t\n", penguinUiConfig.Border)
 	fmt.Fprintf(file, "\tBorderRadius string = \"%s\"\n", penguinUiConfig.BorderRadius)
 	fmt.Fprintf(file, "\tPrimary string = \"%s\"\n", penguinUiConfig.Primary)
 	fmt.Fprintf(file, "\tPrimaryDark string = \"%s\"\n", penguinUiConfig.PrimaryDark)
