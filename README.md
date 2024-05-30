@@ -1,22 +1,22 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/yzaimoglu/franken-ui">
+  <a href="https://github.com/yzaimoglu/penguin-ui">
     <img src=".github/images/logo.png" alt="Logo" width="160" height="160">
   </a>
 
-  <h3 align="center">Franken UI Templ</h3>
+  <h3 align="center">Penguin UI Templ</h3>
 
   <p align="center">
-    A Go Templ port of <a href="https://github.com/sveltecult/franken-ui">Franken UI</a>
+    A Go Templ port of <a href="https://www.penguinui.com/">Penguin UI</a>
     <br/>
     <br/>
-    <a href="https://github.com/yzaimoglu/franken-ui/issues">Report Bug</a>
+    <a href="https://github.com/yzaimoglu/penguin-ui/issues">Report Bug</a>
     .
-    <a href="https://github.com/yzaimoglu/franken-ui/issues">Request Feature</a>
+    <a href="https://github.com/yzaimoglu/penguin-ui/issues">Request Feature</a>
   </p>
 </p>
 
-![License](https://img.shields.io/github/license/yzaimoglu/franken-ui) ![Contributors](https://img.shields.io/github/contributors/yzaimoglu/franken-ui?color=dark-green) ![Issues](https://img.shields.io/github/issues/yzaimoglu/franken-ui)
+![License](https://img.shields.io/github/license/yzaimoglu/penguin-ui) ![Contributors](https://img.shields.io/github/contributors/yzaimoglu/penguin-ui?color=dark-green) ![Issues](https://img.shields.io/github/issues/yzaimoglu/penguin-ui)
 
 ## Table Of Contents
 
@@ -35,11 +35,11 @@
 
 ## Built With
 
-We are using [Go](https://go.dev), [Templ](https://templ.guide/), [Tailwind](https://tailwindcss.com/) and [Franken-UI](https://github.com/sveltecult/franken-ui).
+We are using [Go](https://go.dev), [Templ](https://templ.guide/), [Tailwind](https://tailwindcss.com/) and [Penguin UI](https://www.penguinui.com/).
 
 ## Getting Started
 
-Make sure to follow the instructions on the Franken UI page to install UIKit and Franken UI, as well as Tailwind with PostCSS.
+Make sure to follow the instructions on the Penguin UI page to install Tailwind and AlpineJS.
 
 ### Prerequisites
 
@@ -53,7 +53,7 @@ These are prerequisites to help with the development of this library.
 
 ## Roadmap
 
-See the [open issues](https://github.com/yzaimoglu/franken-ui/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/yzaimoglu/penguin-ui/issues) for a list of proposed features (and known issues).
 
 ## Contributing
 
@@ -69,12 +69,12 @@ We appreciate everyone who wants to contribute. In order to do so take a look at
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/yzaimoglu/franken-ui/blob/master/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/yzaimoglu/penguin-ui/blob/main/LICENSE) for more information.
 
 ## Acknowledgements
 
 * [Go](https://go.dev)
 * [Templ](https://templ.guide)
 * [Tailwind](https://tailwindcss.com/)
-* [Franken-UI](https://github.com/sveltecult/franken-ui)
+* [Penguin UI](https://www.penguinui.com/)
 * [Gopherize Me](https://gopherize.me/)
